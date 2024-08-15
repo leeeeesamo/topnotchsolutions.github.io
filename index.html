@@ -4,135 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TopNotch Solutions</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        /* Example CSS for logo sizing and responsiveness */
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* Light background color */
-        body {
-            background-color: #f5f5f5; /* Default background color */
-            color: #333; /* Darker text color for better contrast on light background */
-        }
-
-        header, footer, nav {
-            background-color: #f5f5f5; /* Matching the site background color */
-        }
-
-        nav a, footer p {
-            color: #333; /* Darker text for readability */
-        }
-
-        header img {
-            width: 350px; /* Increased width for the hero logo */
-        }
-
-        footer img {
-            width: 150px; /* Adjust width for the footer logo */
-        }
-
-        @media (max-width: 768px) {
-            header img {
-                width: 300px; /* Smaller screens adjustments */
-            }
-            
-            footer img {
-                width: 120px;
-            }
-        }
-
-        /* Button color for contrast */
-        .btn-primary {
-            background-color: #12110e; /* Example of a contrasting color */
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background-color: #333;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="font-sans leading-normal tracking-normal">
-
+<body>
     <!-- Header with Parent Brand Logo -->
-    <nav class="p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="#">
-                <img src="https://i.ibb.co/25y5nNj/parent-logo.png" alt="TopNotch Solutions Logo" class="h-12">
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="https://i.ibb.co/25y5nNj/parent-logo.png" alt="TopNotch Solutions Logo">
             </a>
-            <ul class="flex space-x-4">
-                <li><a href="#" class="hover:text-gray-600">Home</a></li>
-                <li><a href="#services" class="hover:text-gray-600">Services</a></li>
-                <li><a href="#about" class="hover:text-gray-600">About Us</a></li>
-                <li><a href="#contact" class="hover:text-gray-600">Contact</a></li>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section with Main Logo and Tagline -->
-    <header class="text-center py-20">
-        <img src="https://i.ibb.co/25y5nNj/parent-logo.png" alt="TopNotch Solutions Main Logo" class="mx-auto mb-6">
-        <h1 class="text-5xl font-bold">TopNotch Solutions</h1>
-        <p class="mt-4 text-xl">"Versatile. Reliable. TopNotch"</p>
-        <a href="#services" class="mt-8 inline-block btn-primary font-bold py-2 px-4 rounded">Explore Our Services</a>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <img src="https://i.ibb.co/25y5nNj/parent-logo.png" alt="TopNotch Solutions Main Logo">
+            <h1>TopNotch Solutions</h1>
+            <p>"Versatile. Reliable. TopNotch"</p>
+            <a href="#services" class="btn-primary">Explore Our Services</a>
+        </div>
     </header>
 
     <!-- Services Section -->
-    <section id="services" class="container mx-auto my-12 p-6 bg-white rounded shadow-lg">
-        <h2 class="text-3xl font-bold mb-4 text-gray-900">Our Services</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Virtual Assistance -->
-            <div class="p-6 border rounded shadow">
-                <img src="https://i.ibb.co/dL6hPTV/virtual-assistance.png" alt="TopNotch Virtual Assistance Logo" class="h-24 mx-auto">
-                <h3 class="text-2xl font-bold mb-2 text-gray-900">TopNotch Virtual Assistance</h3>
-                <p class="text-gray-700">"Efficiency and Precision, Virtually Delivered"</p>
-                <p class="text-gray-700 mt-2">We offer comprehensive support services such as virtual assistance, project management, administrative support, and more. Each service is tailored to meet the unique needs of our clients, ensuring that your business operations are streamlined and effective.</p>
-            </div>
-            <!-- Performance Automotive -->
-            <div class="p-6 border rounded shadow">
-                <img src="https://i.ibb.co/1mWFZrK/auto.png" alt="TopNotch Performance Automotive Logo" class="h-24 mx-auto">
-                <h3 class="text-2xl font-bold mb-2 text-gray-900">TopNotch Performance Automotive</h3>
-                <p class="text-gray-700">"Driven by Precision, Fueled by Passion"</p>
-                <p class="text-gray-700 mt-2">We provide expert mobile mechanic services, offering convenience and reliability directly at your location. From routine maintenance to emergency repairs, our skilled technicians ensure your vehicle remains in peak condition.</p>
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <!-- Virtual Assistance -->
+                <div class="service-item">
+                    <img src="https://i.ibb.co/dL6hPTV/virtual-assistance.png" alt="TopNotch Virtual Assistance Logo">
+                    <h3>TopNotch Virtual Assistance</h3>
+                    <p>"Efficiency and Precision, Virtually Delivered"</p>
+                    <p>We offer comprehensive support services such as virtual assistance, project management, administrative support, and more. Each service is tailored to meet the unique needs of our clients, ensuring that your business operations are streamlined and effective.</p>
+                </div>
+                <!-- Performance Automotive -->
+                <div class="service-item">
+                    <img src="https://i.ibb.co/1mWFZrK/auto.png" alt="TopNotch Performance Automotive Logo">
+                    <h3>TopNotch Performance Automotive</h3>
+                    <p>"Driven by Precision, Fueled by Passion"</p>
+                    <p>We provide expert mobile mechanic services, offering convenience and reliability directly at your location. From routine maintenance to emergency repairs, our skilled technicians ensure your vehicle remains in peak condition.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- About Us Section -->
-    <section id="about" class="container mx-auto my-12 p-6 bg-gray-100 rounded shadow-lg">
-        <h2 class="text-3xl font-bold mb-4">About TopNotch Solutions</h2>
-        <p>TopNotch Solutions is a versatile service provider dedicated to helping businesses and individuals achieve their goals efficiently across a wide range of domains. As the parent brand, TopNotch Solutions encompasses specialized sub-brands, including TopNotch Virtual Assistance and TopNotch Performance Automotive.</p>
-        <p class="mt-4">As a dynamic and growing company, TopNotch Solutions is continuously exploring new avenues to expand our service offerings. Our commitment to excellence and efficiency drives us to innovate and add more TopNotch services that cater to the evolving needs of our clients. Whether in the office, on the road, or beyond, our mission is to enhance productivity and allow you to focus on what truly matters.</p>
-        <p class="mt-4">Stay tuned as we introduce more TopNotch brands designed to simplify your life and help you achieve your goals with unmatched quality and reliability.</p>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About TopNotch Solutions</h2>
+            <p>TopNotch Solutions is a versatile service provider dedicated to helping businesses and individuals achieve their goals efficiently across a wide range of domains. As the parent brand, TopNotch Solutions encompasses specialized sub-brands, including TopNotch Virtual Assistance and TopNotch Performance Automotive.</p>
+            <p>As a dynamic and growing company, TopNotch Solutions is continuously exploring new avenues to expand our service offerings. Our commitment to excellence and efficiency drives us to innovate and add more TopNotch services that cater to the evolving needs of our clients. Whether in the office, on the road, or beyond, our mission is to enhance productivity and allow you to focus on what truly matters.</p>
+            <p>Stay tuned as we introduce more TopNotch brands designed to simplify your life and help you achieve your goals with unmatched quality and reliability.</p>
+        </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="container mx-auto my-12 p-6 bg-white rounded shadow-lg">
-        <h2 class="text-3xl font-bold mb-4 text-gray-900">Contact Us</h2>
-        <form action="#" method="post" class="space-y-4">
-            <div>
-                <label for="name" class="block text-lg font-medium text-gray-900">Name</label>
-                <input type="text" id="name" name="name" class="w-full p-2 border rounded">
-            </div>
-            <div>
-                <label for="email" class="block text-lg font-medium text-gray-900">Email</label>
-                <input type="email" id="email" name="email" class="w-full p-2 border rounded">
-            </div>
-            <div>
-                <label for="message" class="block text-lg font-medium text-gray-900">Message</label>
-                <textarea id="message" name="message" class="w-full p-2 border rounded"></textarea>
-            </div>
-            <button type="submit" class="btn-primary font-bold py-2 px-4 rounded">Send Message</button>
-        </form>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer class="text-center p-4">
+    <footer class="footer">
         <p>&copy; 2024 TopNotch Solutions. All Rights Reserved.</p>
     </footer>
-
 </body>
 </html>
